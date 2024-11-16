@@ -1,4 +1,4 @@
-const res = require("express/lib/response");
+// const res = require("express/lib/response");
 const BlogPost = require("../models/BlogPosts");
 
 class BlogPostController {
