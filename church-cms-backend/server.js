@@ -5,7 +5,7 @@ const eventRoutes = require("./routes/eventRoutes");
 const sermonRoutes = require("./routes/sermonRoutes");
 const blogPostRoutes = require("./routes/blogPostRoutes");
 const prayerRequestRoutes = require("./routes/prayerRequestsRoutes");
-
+const AdminUserRoutes = require("./routes/adminUserRoutes");
 const app = express();
 
 app.use(express.json());
@@ -15,6 +15,7 @@ app.use("/api", eventRoutes);
 app.use("/api", sermonRoutes);
 app.use("/api", blogPostRoutes);
 app.use("/api", prayerRequestRoutes);
+app.use("/api", AdminUserRoutes);
 
 // Sync models
 // sequelize
